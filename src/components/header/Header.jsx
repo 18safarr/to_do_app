@@ -15,5 +15,5 @@ export const Header = () => {
 			</div>
 			<code className="color-primary">v1.0</code>
 		</div>
-	)
+	);
 }

@@ -1,0 +1,26 @@
+.container {
+    padding: 15px;
+    margin: 30px
+}
+
+.container form {
+    margin-top: 10px;
+}
+
+
+.container h2 {
+    font-size: 18px;
+}
+
+.inputField {
+    width: 90%;
+    margin-right: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+.addBtn {
+    font-size: 18px;
+    padding: 5px;
+}
