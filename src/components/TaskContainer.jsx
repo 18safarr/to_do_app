@@ -5,14 +5,13 @@ import {Footer} from "./footer/Footer.jsx";
 import {useState} from "react";
 
 export const TaskContainer = () => {
-	const [tasks, setTasks] = useState([{
-		id: 1,
-		title: "Task 1",
-		isDone: false
-	}]);
+	const [tasks, setTasks] = useState([]);
+
+	console.log(tasks);
 	const actions = {
 		addTask:  (title) => {
-			tasks.push({id: tasks.length+1, title: title, isDone: false});
+			const newTask = {id: tasks.length+1, title: title, isDone: false}
+			setTasks([...tasks, newTask]);
 		},
 		deleteTask:  (id) => {
 			tasks.splice(id, 1);
