@@ -28,3 +28,11 @@
   color: rgba(59, 121, 246, 16);
 }
 
+.number-primary{
+  color: rgb(59, 121, 246);
+  font-weight: bold;
+  font-size: 15px;
+  background-color: rgb(25, 40, 70);
+  padding: 5px;
+  border-radius: 10px;
+}
