@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.titleContainer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titleContainer h1{
+    font-size: 20px;
+}
