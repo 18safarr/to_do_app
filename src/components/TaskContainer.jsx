@@ -39,7 +39,7 @@ export const TaskContainer = () => {
 				allTaks={tasks}
 				countUndone={countTasksUndone}
 			/>
-			<Footer />
+			<Footer countDone={countTasksDone} />
 		</main>
 	)
 }
