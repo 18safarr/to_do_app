@@ -6,6 +6,10 @@ export const TaskItem = ({id, title,isDone,delTask,changeStatus}) => {
 	const handlerChangeStatus = (e) => {
 		changeStatus(id, !isDone);
 	}
+	const handlerDeleteTask = (e) => {
+		e.stopPropagation();
+		delTask(id);
+	}
 	return (
 		<li
 			className={styles.container}
@@ -16,7 +20,7 @@ export const TaskItem = ({id, title,isDone,delTask,changeStatus}) => {
 				<h4 className={isDone? styles.done : styles.undone}>{title}</h4>
 			</div>
 			{/*<span className={styles.itemText}>Item</span>*/}
-			<button  >🗑️</button>
+			<button onClick={handlerDeleteTask}>🗑️</button>
 
 		</li>
 	)

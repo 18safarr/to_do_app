@@ -9,7 +9,8 @@ export const TaskContainer = () => {
 
 	const actions = {
 		addTask:  (title) => {
-			const newTask = {id: tasks.length+1, title: title, isDone: false}
+			const idTast = tasks.length ? tasks[tasks.length-1].id + 1 : 1;
+			const newTask = {id: idTast, title: title, isDone: false}
 			setTasks([...tasks, newTask]);
 		},
 		deleteTask:  (id) => {
