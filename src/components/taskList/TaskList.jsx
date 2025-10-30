@@ -1,18 +1,14 @@
 import styles from "./TaskList.module.css"
 import {TaskItem} from "../taskItem/TaskItem.jsx";
 
-export const TaskList = () => {
-	const item = {
-		taskNum : 2,
-		taskName : "il faut coder "
-	}
+export const TaskList = ({deleteTask, changeStatus, allTaks,countUndone}) => {
 	return (
 		<div className={styles.container}>
-			<h3>📋 Il te reste encore <span className="number-primary">2</span> tâches à accomplir</h3>
+			<h3>📋 Il te reste encore <span className="number-primary">{countUndone}</span> tâche{countUndone>=2 ?"s":""} à accomplir</h3>
 			<ul className={styles.listItems}>
-				<TaskItem {...item}/>
-				<TaskItem {...item}/>
-				<TaskItem {...item}/>
+				{allTaks.map((task, index) => (
+					<TaskItem {...task}  key={task.id} />
+				))}
 			</ul>
 		</div>
 	)

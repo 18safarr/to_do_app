@@ -9,10 +9,15 @@
 .taskElement{
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+    min-width: 0;
+    max-width: 92%;
+    overflow: clip;
     gap: 1rem;
 }
 .taskElement h4 {
     font-size: 13px;
+    word-wrap: break-word;
 }
 
 .container .itemText {

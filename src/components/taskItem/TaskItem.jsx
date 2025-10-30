@@ -1,12 +1,12 @@
 import styles from './TaskItem.module.css';
-export const TaskItem = ({taskNum, taskName}) => {
+export const TaskItem = ({id, title,isDone}) => {
 	return (
 		<li className={styles.container}>
 			<div className={styles.taskElement}>
-				<span className="number-primary">{taskNum}</span>
-				<h4>{taskName}</h4>
+				<span className="number-primary">{id}</span>
+				<h4>{title}</h4>
 			</div>
-			<span className={styles.itemText}>Item</span>
+			{/*<span className={styles.itemText}>Item</span>*/}
 			<button className={styles.deleteButton}>🗑️</button>
 
 		</li>
