@@ -15,10 +15,18 @@
     overflow: clip;
     gap: 1rem;
 }
-.taskElement h4 {
+.taskElement .undone {
     font-size: 13px;
     word-wrap: break-word;
+    color: white;
 }
+.taskElement .done{
+    font-size: 13px;
+    word-wrap: break-word;
+    text-decoration: line-through solid red;
+    color : #7272a8;
+}
+.taskElement title
 
 .container .itemText {
     color: orange;
